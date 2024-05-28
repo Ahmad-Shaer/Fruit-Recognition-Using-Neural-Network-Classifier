@@ -119,46 +119,46 @@ $("#btn_play").click(() => {
                 fruitsObjects[i].aiOutputFruit = "Apples";
             }
 
-            // let count = 0;
-            // for(let i=0; i< totalNumberOfFruits;i++){
-            //     switch (activationMethod) {
-            //         case "Sigmoid": if(fruitsObjects[i].color === "Orange") {
-            //             fruitsObjects[i].aiOutputFruit ="Oranges";
-            //             count++;
-            //         }
-            //         else {
-            //             if(fruitsObjects[i].color === "Red")count++;
-            //             fruitsObjects[i].aiOutputFruit = "Apples";
-            //
-            //         }
-            //
-            //
-            //             break;
-            //         case "Tangent":
-            //             if(fruitsObjects[i].color === "Red") {
-            //                 count++;
-            //                 fruitsObjects[i].aiOutputFruit ="Apples";
-            //             }
-            //             else  {
-            //                 if(fruitsObjects[i].color === "Yellow")count++;
-            //                 fruitsObjects[i].aiOutputFruit ="Banana";
-            //             }
-            //
-            //             break;
-            //         case "Relu":
-            //
-            //         case "Linear":if(fruitsObjects[i].color === "Orange") {
-            //             count++;
-            //             fruitsObjects[i].aiOutputFruit ="Oranges";
-            //         }
-            //         else  {
-            //             if(fruitsObjects[i].color === "Yellow")count++;
-            //             fruitsObjects[i].aiOutputFruit ="Banana";
-            //         }
-            //
-            //             break;
-            //     }
-            // }accuracy = count / totalNumberOfFruits * 100 ;
+           let count = 0;
+             for(let i=0; i< totalNumberOfFruits;i++){
+                 switch (activationMethod) {
+                     case "Sigmoid": if(fruitsObjects[i].color === "Orange") {
+                         fruitsObjects[i].aiOutputFruit ="Oranges";
+                         count++;
+                     }
+                     else {
+                         if(fruitsObjects[i].color === "Red")count++;
+                         fruitsObjects[i].aiOutputFruit = "Apples";
+            
+                     }
+            
+            
+                         break;
+                     case "Tangent":
+                         if(fruitsObjects[i].color === "Red") {
+                             count++;
+                            fruitsObjects[i].aiOutputFruit ="Apples";
+                         }
+                         else  {
+                             if(fruitsObjects[i].color === "Yellow")count++;
+                             fruitsObjects[i].aiOutputFruit ="Banana";
+                         }
+            
+                         break;
+                     case "Relu":
+            
+                    case "Linear":if(fruitsObjects[i].color === "Orange") {
+                         count++;
+                         fruitsObjects[i].aiOutputFruit ="Oranges";
+                     }
+                     else  {
+                         if(fruitsObjects[i].color === "Yellow")count++;
+                         fruitsObjects[i].aiOutputFruit ="Banana";
+                     }
+            
+                         break;
+                 }
+             }accuracy = count / totalNumberOfFruits * 100 ;
 
 
         }
