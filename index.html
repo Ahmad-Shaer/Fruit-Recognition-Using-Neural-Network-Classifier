@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fruit Game!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="title">
+        <span class="char-1">F</span>
+        <span class="char-2">r</span>
+        <span class="char-3">u</span>
+        <span class="char-4">i</span>
+        <span class="char-5">t</span>
+        <span>&nbsp;</span>
+        <span class="char-1">G</span>
+        <span class="char-2">a</span>
+        <span class="char-3">m</span>
+        <span class="char-4">e</span>
+        <span class="char-5">!</span>
+    </div>
+    <div id="accuracy">Accuracy: 0%</div>
+    <div class="body">
+        <div class="left-side">
+            <div class="section-title">
+                Settings
+            </div>
+            <label for="input_activation-function">Select an <br> activation function:</label><br>
+            <select id="input_activation-function" name="activationFunction">
+                <option value="Sigmoid">Sigmoid</option>
+                <option value="Tangent">Tangent</option>
+                <option value="Relu">Relu</option>
+                <option value="Linear">Linear</option>
+            </select><br>
+
+            <label for="input_number-of-neuron">Number of Neuron</label><br>
+            <input type="number" id="input_number-of-neuron" min="2" value="2"><br>
+
+            <label for="input_learning-rate">Learning Rate</label><br>
+            <input type="number" id="input_learning-rate"   value="0.8" step="0.1"><br>
+
+            <label for="input_epoches">Maximum Number <br> of Epoches</label><br>
+            <input type="number" id="input_epoches" min="2" value="1000" step="10"><br>
+
+            <label for="input_goal"> Goal </label><br>
+            <input type="number" id="input_goal"><br>
+
+            <button id="btn_play">Play</button>
+        </div>
+        <div class="table-section">
+            <table>
+                <caption>
+                    Data
+                </caption>
+                <tr id="headers">
+                    <th>Sweetness</th>
+                    <th>Color</th>
+                    <th>Real Fruit</th>
+                    <th>AI Output Fruit</th>
+                </tr>
+                <tbody id="data-body">
+
+                </tbody>
+
+            </table>
+        </div>
+        <div class="right-side">
+            <div class="section-title">
+                Data Inputs
+
+            </div>
+
+            <div class="button-wrap" >
+                <label class="button" for="input_upload">Upload File</label>
+                <input id="input_upload" type="file">
+            </div>
+            <br>
+            <label for="input_sweetness">Sweetness:</label><br>
+            <input type="number" id="input_sweetness" min="0" value="0"><br>
+            <label for="input_color">Color:</label><br>
+            <select id="input_color" name="color">
+                <option value="Orange">Orange</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Red">Red</option>
+            </select><br>
+
+            <button id="btn_add">Add Fruit</button>
+
+            <button id="btn_reset" style="margin-top: 70px">Reset</button>
+        </div>
+
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

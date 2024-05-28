@@ -1,0 +1,11 @@
+5,Orange,Oranges
+1,Yellow,Banana
+1,Yellow,Banana
+10,Red,Apples
+1,Yellow,Banana
+5,Orange,Oranges
+10,Red,Apples
+1,Yellow,Banana
+10,Red,Apples
+10,Red,Apples
+5,Orange,Oranges
